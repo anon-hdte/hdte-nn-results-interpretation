@@ -37,6 +37,8 @@ Subgroup-average curves (see *plot6_practical_subgroup_curves.png*) reveal clear
 - **Child sex:** HDTE-NN shows clear separation between groups, whereas competing methods stay close to zero with limited differences.
 - **Income:** The strongest contrast appears here. HDTE-NN reveals sharply distinct patterns, including opposite-sign effects at higher thresholds across income groups. In contrast, CDF-NN and DRF remain near zero and fail to capture this heterogeneity.
 
+These findings are consistent with prior analyses of the NHANES data, which document substantial heterogeneity and sign changes in treatment effects across subpopulations, particularly along dimensions related to socioeconomic status and participation likelihood (see Padilla et al., 2026).
+
 Overall, HDTE-NN provides a more expressive and stable characterization of treatment-effect heterogeneity.
 
 ---
@@ -53,6 +55,8 @@ Representative profiles (see *plot7_practical_representative_profiles.png*) furt
 
 By contrast, competing methods produce flatter or less structured curves, with DRF (joint) remaining particularly close to zero.
 
+These profile-level patterns align with the broader literature on heterogeneous treatment effects, where effects may vary substantially across covariate-defined subgroups (e.g., Abadie et al., 2018).
+
 ---
 
 ## Summary
@@ -63,6 +67,13 @@ These results show that HDTE-NN:
 - produces smooth and profile-specific treatment-effect curves.
 
 In contrast, competing methods tend to attenuate effects toward zero or produce less coherent patterns, limiting interpretability.
+
+---
+
+## References
+
+- Abadie, A., Chingos, M. M., & West, M. R. (2018). *Endogenous stratification in randomized experiments*. Review of Economics and Statistics.
+- Padilla, O. H. M., Chen, Y., Padilla, C. M. M., & Ruiz, G. (2026). *A causal fused lasso for interpretable heterogeneous treatment effects estimation*. Journal of Machine Learning Research.
 
 ---
 
