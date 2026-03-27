@@ -15,13 +15,13 @@ To complement the score-based evaluation, we provide visual summaries of the est
 
 ![Overall curves](plot5_practical_overall_curves.png)
 
-The overall average estimated treatment-effect curve (see *plot5_practical_overall_curves.png*) shows a clear and systematic transition for HDTE-NN from slightly negative values at lower thresholds to positive values at moderate and large thresholds.  
+The overall average estimated treatment-effect curve (see *plot5_practical_overall_curves.png*) exhibits a clear and systematic transition for HDTE-NN from slightly negative values at lower thresholds to positive values at moderate and large thresholds.  
 This indicates a structured shift in the BMI distribution associated with school-meal participation.
 
-In particular, positive values at higher thresholds suggest an increased probability of being below larger BMI cutoffs, consistent with a reduction in the upper tail of the BMI distribution.
+In particular, positive values at higher thresholds correspond to an increased probability of being below larger BMI cutoffs, consistent with a reduction in the upper tail of the BMI distribution.
 
 By contrast, CDF-NN and both DRF variants remain close to zero over most thresholds, indicating substantially weaker detected effects.  
-The DRF two-forest implementation exhibits noticeable oscillations, while CDF-NN and joint DRF produce flatter curves with limited variation.
+The DRF two-forest implementation exhibits noticeable oscillations, while CDF-NN and the joint DRF estimator produce flatter curves with limited variation.
 
 Overall, HDTE-NN captures a stronger, smoother, and more coherent distributional signal.
 
@@ -33,11 +33,11 @@ Overall, HDTE-NN captures a stronger, smoother, and more coherent distributional
 
 Subgroup-average curves (see *plot6_practical_subgroup_curves.png*) reveal clear heterogeneity across covariates:
 
-- **Age:** HDTE-NN produces well-separated curves across age groups, with older children exhibiting larger positive effects at moderate and high thresholds. Competing methods remain flatter and less differentiated.
-- **Child sex:** HDTE-NN shows clear separation between groups, whereas competing methods stay close to zero with limited differences.
-- **Income:** The strongest contrast appears here. HDTE-NN reveals sharply distinct patterns, including opposite-sign effects at higher thresholds across income groups. In contrast, CDF-NN and DRF remain near zero and fail to capture this heterogeneity.
+- **Age:** HDTE-NN produces well-separated curves across age groups, with older children exhibiting larger positive effects at moderate and high thresholds, while competing methods remain flatter and less differentiated.
+- **Child sex:** HDTE-NN shows clearer separation between groups, whereas competing methods stay close to zero with limited differences.
+- **Income:** The most pronounced contrast appears along the income dimension. HDTE-NN reveals sharply distinct patterns, including opposite-sign effects at higher thresholds across income groups, while CDF-NN and DRF remain near zero and fail to capture this heterogeneity.
 
-These findings are consistent with prior analyses of the NHANES data, which document substantial heterogeneity and sign changes in treatment effects across subpopulations, particularly along dimensions related to socioeconomic status and participation likelihood (see Padilla et al., 2026).
+These findings are consistent with prior analyses of the NHANES dataset, which document sign changes and substantial heterogeneity in treatment effects across subpopulations defined by participation likelihood and socioeconomic status (see Abadie et al., 2018; Padilla et al., 2026).
 
 Overall, HDTE-NN provides a more expressive and stable characterization of treatment-effect heterogeneity.
 
@@ -49,13 +49,13 @@ Overall, HDTE-NN provides a more expressive and stable characterization of treat
 
 Representative profiles (see *plot7_practical_representative_profiles.png*) further illustrate the flexibility of HDTE-NN:
 
-- **Young profile (q=0.10):** HDTE-NN produces a strongly positive and smooth curve, while competing methods remain near zero or slightly negative.
-- **Median profile (q=0.50):** HDTE-NN yields a clearly negative curve whose magnitude increases with the threshold, indicating a structured shift differing from the younger group.
-- **Older profile (q=0.90):** HDTE-NN produces an even more pronounced negative curve, with larger magnitude than the median profile.
+- **Young profile (q = 0.10):** HDTE-NN produces a strongly positive and smooth curve, while competing methods remain near zero or slightly negative.
+- **Median profile (q = 0.50):** HDTE-NN yields a clearly negative curve whose magnitude increases with the threshold, indicating a structured distributional shift differing from the younger group.
+- **Older profile (q = 0.90):** HDTE-NN produces an even more pronounced negative curve, with larger magnitude than the median profile.
 
-By contrast, competing methods produce flatter or less structured curves, with DRF (joint) remaining particularly close to zero.
+By contrast, competing methods produce flatter or less structured curves, with the DRF (joint) estimator remaining particularly close to zero.
 
-These profile-level patterns align with the broader literature on heterogeneous treatment effects, where effects may vary substantially across covariate-defined subgroups (e.g., Abadie et al., 2018).
+These profile-level patterns are consistent with the heterogeneous treatment effects observed in prior NHANES analyses and the broader literature on subgroup-dependent causal effects (Abadie et al., 2018).
 
 ---
 
@@ -72,7 +72,7 @@ In contrast, competing methods tend to attenuate effects toward zero or produce 
 
 ## References
 
-- Abadie, A., Chingos, M. M., & West, M. R. (2018). *Endogenous stratification in randomized experiments*. Review of Economics and Statistics.
+- Abadie, A., Chingos, M. M., & West, M. R. (2018). *Endogenous stratification in randomized experiments*. Review of Economics and Statistics, 100(4):567–580.
 - Padilla, O. H. M., Chen, Y., Padilla, C. M. M., & Ruiz, G. (2026). *A causal fused lasso for interpretable heterogeneous treatment effects estimation*. Journal of Machine Learning Research.
 
 ---
