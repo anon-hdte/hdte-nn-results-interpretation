@@ -37,7 +37,7 @@ Subgroup-average curves reveal clear heterogeneity across covariates:
 
 - **Age:** Older children exhibit larger positive effects at moderate and high thresholds, while younger groups show weaker effects.
 - **Child sex:** HDTE-NN yields clearer separation between groups, whereas competing methods remain close to zero.
-- **Income:** The strongest contrast appears across income groups, where HDTE-NN reveals sharply distinct patterns, including opposite-sign effects at higher thresholds.
+- **Income:** The strongest contrast appears across income groups, where HDTE-NN reveals sharply distinct patterns, including opposite-sign effects across groups.
 
 By contrast, CDF-NN and DRF variants remain near zero and fail to capture this heterogeneity.
 
@@ -53,11 +53,28 @@ Representative profiles further illustrate the flexibility of HDTE-NN:
 
 - **Young profile (q = 0.10):** Strong positive and increasing curve.
 - **Median profile (q = 0.50):** Clear negative curve with increasing magnitude.
-- **Older profile (q = 0.90):** Even more pronounced negative curve.
+- **Older profile (q = 0.90):** Negative curve with smaller magnitude than the median profile.
 
 By contrast, competing methods produce flatter or less structured curves, with DRF (joint) remaining particularly close to zero.
 
 These results highlight substantial heterogeneity in both magnitude and direction across profiles.
+
+---
+
+## 4. Relation to prior work (NHANES)
+
+These findings are consistent with prior analyses of the NHANES data (Padilla et al., 2026; Chan et al., 2016), which report heterogeneous treatment effects with both positive and negative signs across subpopulations.
+
+At an aggregate level, HDTE-NN agrees with these results, particularly in identifying strong heterogeneity across socioeconomic groups. In particular, the income panel and representative profiles show clear sign differences across groups, consistent with propensity-score-based analyses such as CFL2.
+
+However, HDTE-NN provides additional insight beyond mean-based approaches. While CFL2 summarizes treatment effects through a single value within each subgroup or propensity-score region, HDTE-NN produces full treatment-effect curves as a function of the outcome threshold. This allows us to understand how the treatment shifts the entire outcome distribution, not just its average.
+
+In particular:
+- treatment effects can differ in both **magnitude and direction** across individuals,
+- heterogeneity varies across **covariates** (strongest along income),
+- and the effect changes across **outcome thresholds**.
+
+Overall, HDTE-NN retains the main conclusions of prior work while providing a richer and more interpretable characterization of treatment-effect heterogeneity.
 
 ---
 
@@ -69,7 +86,6 @@ HDTE-NN:
 - produces smooth and profile-specific treatment-effect curves.
 
 Competing methods tend to attenuate effects toward zero or produce less coherent patterns.
-
 ---
 
 # Dataset 2: CPS / NSW
@@ -116,7 +132,7 @@ Representative profiles illustrate variation across individuals:
 
 - **Young profile (q = 0.10):** Smaller positive effects.
 - **Median profile (q = 0.50):** Larger effects across most thresholds.
-- **Older profile (q = 0.90):** Also strong effects, comparable to the median profile.
+- **Older profile (q = 0.90):** Strong positive effects, though slightly smaller than those of the median profile.
 
 Competing methods remain negative or close to zero.
 
