@@ -172,6 +172,8 @@ Competing methods tend to produce flatter or near-zero estimates.
   *Propensity score-matching methods for nonexperimental causal studies*.  
   Review of Economics and Statistics, 84(1):151–161.
 
+---
+
 ## Note
 
 This repository is provided for anonymous review purposes only.
