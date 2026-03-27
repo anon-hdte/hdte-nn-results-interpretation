@@ -1,6 +1,6 @@
 # Additional Results for HDTE-NN
 
-This repository contains additional visualizations supporting the interpretability analysis of the proposed HDTE-NN estimator on the NHANES dataset.  
+This repository contains additional visualizations supporting the interpretability analysis of the proposed HDTE-NN estimator on the NHANES dataset (see Appendix A.1 of the paper).  
 All results are averaged over 100 repeated sample splits.
 
 ---
@@ -63,3 +63,9 @@ These results show that HDTE-NN:
 - produces smooth and profile-specific treatment-effect curves.
 
 In contrast, competing methods tend to attenuate effects toward zero or produce less coherent patterns, limiting interpretability.
+
+---
+
+## Note
+
+This repository is provided for anonymous review purposes only.
