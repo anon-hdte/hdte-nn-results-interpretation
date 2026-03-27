@@ -37,7 +37,7 @@ Subgroup-average curves (see *plot6_practical_subgroup_curves.png*) reveal clear
 - **Child sex:** HDTE-NN shows clearer separation between groups, whereas competing methods stay close to zero with limited differences.
 - **Income:** The most pronounced contrast appears along the income dimension. HDTE-NN reveals sharply distinct patterns, including opposite-sign effects at higher thresholds across income groups, while CDF-NN and DRF remain near zero and fail to capture this heterogeneity.
 
-These findings are consistent with prior analyses of the NHANES dataset, which document sign changes and substantial heterogeneity in treatment effects across subpopulations defined by participation likelihood and socioeconomic status (see Abadie et al., 2018; Padilla et al., 2026).
+These findings are consistent with prior analyses of the NHANES dataset, which document sign changes and substantial heterogeneity in treatment effects across subpopulations defined by participation likelihood and socioeconomic status (see Chan et al., 2016; Padilla et al., 2026).
 
 Overall, HDTE-NN provides a more expressive and stable characterization of treatment-effect heterogeneity.
 
@@ -55,7 +55,7 @@ Representative profiles (see *plot7_practical_representative_profiles.png*) furt
 
 By contrast, competing methods produce flatter or less structured curves, with the DRF (joint) estimator remaining particularly close to zero.
 
-These profile-level patterns are consistent with the heterogeneous treatment effects observed in prior NHANES analyses and the broader literature on subgroup-dependent causal effects (Abadie et al., 2018).
+These profile-level patterns are consistent with heterogeneous treatment effects observed in prior NHANES analyses and the broader literature on subgroup-dependent causal effects (Chan et al., 2016).
 
 ---
 
@@ -72,8 +72,13 @@ In contrast, competing methods tend to attenuate effects toward zero or produce 
 
 ## References
 
-- Abadie, A., Chingos, M. M., & West, M. R. (2018). *Endogenous stratification in randomized experiments*. Review of Economics and Statistics, 100(4):567–580.
-- Padilla, O. H. M., Chen, Y., Padilla, C. M. M., & Ruiz, G. (2026). *A causal fused lasso for interpretable heterogeneous treatment effects estimation*. Journal of Machine Learning Research.
+- Chan, K. C. G., Yam, S. C. P., & Zhang, Z. (2016).  
+  *Globally efficient non-parametric inference of average treatment effects by empirical balancing calibration weighting*.  
+  Journal of the Royal Statistical Society: Series B, 78(3):673–700.
+
+- Padilla, O. H. M., Chen, Y., Padilla, C. M. M., & Ruiz, G. (2026).  
+  *A causal fused lasso for interpretable heterogeneous treatment effects estimation*.  
+  Journal of Machine Learning Research.
 
 ---
 
